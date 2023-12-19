@@ -1,0 +1,24 @@
+[package]
+name = "http-mtls-proxy"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+clap = { version = "4.4.11", features = ["derive"] }
+env_logger = "0.10.1"
+http-body-util = "0.1.0"
+hyper = { version = "1.1.0", features = ["client", "http1", "server"] }
+hyper-util = { version = "0.1.1", features = ["http1", "client", "server", "tokio"] }
+log = "0.4.20"
+regex = "1.10.2"
+rustls = "0.22.1"
+rustls-pemfile = "2.0.0"
+rustls-pki-types = "1.0.1"
+tokio = { version = "1.35.0", features = ["full"] }
+tokio-rustls = "0.25.0"
+url = "2.5.0"
+urlpattern = "0.2.0"
+webpki-roots = "0.26.0"
